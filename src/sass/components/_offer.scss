@@ -1,0 +1,118 @@
+.offer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: top;
+  width: 100%;
+  height: 100%;
+  background: url('../assets/shape-1.svg') no-repeat center center / 100%;
+  opacity: 0.7;
+
+  &_discount {
+    background: url('../assets/shape-2.svg') no-repeat center center / 100%;
+  }
+}
+
+.offer__reduction {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  width: 8.5vw;
+  height: 8.5vw;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #db0000;
+
+  font-family: $font-primary;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  text-align: center;
+  color: #ffffff;
+
+  @include desktop {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.offer__title {
+  margin: 0;
+  padding: 2.5rem 0 1rem;
+  font-family: $font-primary;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  letter-spacing: 0.09rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.offer__price {
+  margin: 0;
+  padding: 0.4rem 0 1.3rem;
+  font-family: $font-primary;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+  color: #ffffff;
+
+  strong {
+    font-size: 2.2rem;
+    letter-spacing: 0.06rem;
+  }
+}
+
+.offer__info {
+  display: flex;
+  position: relative;
+  left: -3%;
+  width: 106%;
+  height: 2rem;
+  margin-bottom: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  background: #495795;
+
+  font-family: $font-primary;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: $font-color;
+  letter-spacing: 0.06rem;
+}
+
+.offer__cost {
+  font-family: $font-primary;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  text-align: center;
+  color: $font-color;
+}
+
+.offers__item_active {
+  .offer {
+    opacity: 1;
+  }
+  .offer__title {
+    padding-top: 2.7rem;
+    font-size: 1.87rem;
+    line-height: 2.2rem;
+  }
+  .offer__price {
+    padding-top: 1.2rem;
+    font-size: 1.54rem;
+    strong {
+      font-size: 2.4rem;
+    }
+  }
+  .offer__info {
+    height: 2.2rem;
+    font-size: 1.54rem;
+  }
+  .offer__cost {
+    font-size: 1.32rem;
+    line-height: 1.55rem;
+  }
+}

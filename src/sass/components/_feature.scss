@@ -1,0 +1,24 @@
+.feature {
+  display: flex;
+  align-items: center;
+}
+
+.feature__icon {
+  display: flex;
+  width: 12px;
+  height: 12px;
+  margin-right: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature__description {
+  font-family: $font-secondary;
+  font-size: 1.7rem;
+  line-height: 3rem;
+  font-weight: 400;
+  color: $font-color;
+  letter-spacing: 0.05rem;
+
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.684495);
+}

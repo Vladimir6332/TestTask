@@ -1,0 +1,33 @@
+@mixin iphone12 {
+  // and (-webkit-device-pixel-ratio: 3)
+  @media only screen and (device-width: 390px) and (device-height: 844px) {
+    @content;
+  }
+}
+
+@mixin iphoneX {
+  // and (-webkit-device-pixel-ratio: 3)
+  @media only screen and (device-width: 375px) and (device-height: 812px) {
+    @content;
+  }
+}
+
+@mixin iphone8Plus {
+  // and (-webkit-device-pixel-ratio: 2.6)
+  @media only screen and (device-width: 414px) and (device-height: 736px) {
+    @content;
+  }
+}
+
+@mixin iphone8 {
+  // and (-webkit-device-pixel-ratio: 2)
+  @media only screen and (device-width: 375px) and (device-height: 667px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 1024px) {
+    @content;
+  }
+}
