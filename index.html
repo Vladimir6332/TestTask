@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/normalize.css">
+  <link rel="stylesheet" href="src/sass/style.css">
+  <script src="./src/script.js"></script>
+  <title>TestTask</title>
+</head>
+<body>
+  <div class="start-message">Please choose a mobile screen resolution to see the solution.</div>
+  <section class="banner">
+    <h1 class="banner__title">Unlimited Access<br>to All Features</h1>
+    <div class="features">
+      <ul class="features__list">
+        <li class="features__item"><div class="feature"> <div class="feature__icon"><img src="./src/assets/unlimitedDocs.svg" alt="unlimited"></div><div class="feature__description" id='unlimited-docs'>Unlimited documents</div></div></li>
+        <li class="features__item"><div class="feature"> <div class="feature__icon"><img src="./src/assets/export.svg" alt="export"></div><div class="feature__description" id='count-mode'>Export to clouds</div></div></li>
+        <li class="features__item"><div class="feature"> <div class="feature__icon"><img src="./src/assets/noAds.svg" alt="noAds"></div><div class="feature__description" id='recognition'>Text recognition (OCR)</div></div></li>
+      </ul>
+    </div>
+    <div class="offers">
+      <ul class="offers__list">
+        <li class="offers__item offers__item_active">
+          <div class="offer">
+            <h3 class="offer__title" id="monthly">Monthly</h3>
+            <div class="offer__price" id="price-monthly"><strong>$9.99</strong><br>per month</div>
+            <div class="offer__info" id="monthly-info">3 DAYS FREE</div>
+            <div class="offer__cost" id="price-per-month1">$9.99/month</div>                               
+          </div>          
+        </li>
+        <li class="offers__item">
+          <div class="offer offer_discount">
+            <h3 class="offer__title" id="annually">Annually</h3>
+            <div class="offer__price" id="price-year"><strong>$19.99</strong><br>per year</div>
+            <div class="offer__info" id="year-info">MOST POPULAR</div>
+            <div class="offer__cost" id="price-per-month2">$1.66/month</div>
+            <div class="offer__reduction" id="discount">-83%</div>           
+          </div>
+        </li>
+      </ul>
+      <div class="offers__button-wrapper"><a class="button" id="button-continue" href="https://apple.com/">Continue</a></div>
+      <p class="remark" id="remark">Auto-renewable. Cancel anytime.</p>      
+    </div>
+    
+    <div class="info">
+      <a class="info__term" id="terms" href="#">Terms of Use</a>
+      <a class="info__privacy" id="privacy" href="#">Privacy Policy</a>
+    </div>
+    
+    <nav class='navigation'>
+      <ul class="navigation__list">
+        <li class="navigation__item"><a class="close" href="#">
+          <svg  width="16" height="16" viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path id="close-icon" d="M15.74 0.259984C15.4346 -0.0453608 14.9396 -0.0453608 14.6342 0.259984L7.99997 6.89425L1.3657 0.259984C1.06036 -0.0453608 0.565298 -0.0453608 0.259953 0.259984C-0.0453913 0.565328 -0.0453913 1.06039 0.259953 1.36573L6.89422 8L0.259953 14.6343C-0.0453913 14.9396 -0.0453913 15.4347 0.259953 15.74C0.565298 16.0454 1.06036 16.0454 1.3657 15.74L7.99997 9.10575L14.6342 15.74C14.9396 16.0454 15.4346 16.0454 15.74 15.74C16.0453 15.4347 16.0453 14.9396 15.74 14.6343L9.10572 8L15.74 1.36573C16.0453 1.06039 16.0453 0.565328 15.74 0.259984Z" fill="white" fill-opacity="0.4"/>
+            </svg>
+        </a></li>
+        <li class="navigation__item"><a class="restore" id="restore" href="#">Restore</a></li>
+      </ul>      
+    </nav>
+        
+  </section>
+</body>
+</html>

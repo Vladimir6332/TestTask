@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'SFProDisplay';
+  src: url('../assets/fonts/SFPro/SFProDisplay-Regular.eot');
+  src: local('SF Pro Display Regular'), local('SFProDisplay-Regular'),
+    url('../assets/fonts/SFPro/SFProDisplay-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/SFPro/SFProDisplay-Regular.woff2') format('woff2'),
+    url('../assets/fonts/SFPro/SFProDisplay-Regular.woff') format('woff'),
+    url('../assets/fonts/SFPro/SFProDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFProText';
+  src: url('../assets/fonts/SFPro/SFProText-Regular.ttf');
+  src: local('SF Pro Text Regular'), local('SFProText-Regular'),
+    url('../assets/fonts/SFPro/SFProDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
