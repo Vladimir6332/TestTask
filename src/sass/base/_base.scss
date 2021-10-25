@@ -51,3 +51,19 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+
+.start-message {
+  position: absolute;
+  display: none;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  font-family: $font-color;
+  font-size: 20px;
+  color: wheat;
+  text-align: center;
+
+  @include desktop {
+    display: flex;
+  }
+}

@@ -1,9 +1,8 @@
 .banner {
+  display: none;
   position: relative;
   width: 100%;
   height: 100%;
-  background: url('../assets/background-full/4@3x.png') no-repeat top center /
-    390px 844px;
 
   &::after {
     content: '';
@@ -18,15 +17,24 @@
     border-radius: 10rem;
   }
 
+  @include iphone12 {
+    display: block;
+    background: url('../assets/background-full/4@3x.png') no-repeat top center /
+      390px 844px;
+  }
+
   @include iphoneX {
+    display: block;
     background: url('../assets/background-full/4@3x.png') no-repeat center
       center / 375px 812px;
   }
   @include iphone8Plus {
+    display: block;
     background: url('../assets/background-full/4@3x.png') no-repeat -20% center /
       414px;
   }
   @include iphone8 {
+    display: block;
     background: url('../assets/background-full/4@2x.png') no-repeat -20% center /
       375px;
   }

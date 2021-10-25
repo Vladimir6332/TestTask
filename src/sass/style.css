@@ -73,13 +73,36 @@ ul {
   padding: 0;
 }
 
+.start-message {
+  position: absolute;
+  display: none;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  font-family: #ffffff;
+  font-size: 20px;
+  color: wheat;
+  text-align: center;
+}
+@media only screen and (min-width: 600px) {
+  .start-message {
+    display: flex;
+  }
+}
+
 .button {
+  box-sizing: border-box;
+  display: flex;
   width: 100%;
   height: 100%;
   padding-top: 0.4rem;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(270deg, #1987ff 0%, #19ccff 100%);
   border: none;
   border-radius: 3rem;
+  cursor: pointer;
+  text-decoration: none;
   font-family: "SFProDisplay", sans-serif;
   font-size: 1.7rem;
   line-height: 1.7rem;
@@ -89,10 +112,10 @@ ul {
 }
 
 .banner {
+  display: none;
   position: relative;
   width: 100%;
   height: 100%;
-  background: url("../assets/background-full/4@3x.png") no-repeat top center/390px 844px;
 }
 .banner::after {
   content: "";
@@ -105,18 +128,27 @@ ul {
   background: #ffffff;
   border-radius: 10rem;
 }
+@media only screen and (device-width: 390px) and (device-height: 844px) {
+  .banner {
+    display: block;
+    background: url("../assets/background-full/4@3x.png") no-repeat top center/390px 844px;
+  }
+}
 @media only screen and (device-width: 375px) and (device-height: 812px) {
   .banner {
+    display: block;
     background: url("../assets/background-full/4@3x.png") no-repeat center center/375px 812px;
   }
 }
 @media only screen and (device-width: 414px) and (device-height: 736px) {
   .banner {
+    display: block;
     background: url("../assets/background-full/4@3x.png") no-repeat -20% center/414px;
   }
 }
 @media only screen and (device-width: 375px) and (device-height: 667px) {
   .banner {
+    display: block;
     background: url("../assets/background-full/4@2x.png") no-repeat -20% center/375px;
   }
 }
@@ -353,14 +385,7 @@ ul {
   font-family: "SFProDisplay", sans-serif;
   font-size: 1rem;
   line-height: 1.2rem;
-  text-align: center;
   color: #ffffff;
-}
-@media only screen and (min-width: 1024px) {
-  .offer__reduction {
-    width: 30px;
-    height: 30px;
-  }
 }
 
 .offer__title {
@@ -437,6 +462,11 @@ ul {
 .offers__item_active .offer__cost {
   font-size: 1.32rem;
   line-height: 1.55rem;
+}
+.offers__item_active .offer__reduction {
+  width: 9.35vw;
+  height: 9.35vw;
+  font-size: 1.1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

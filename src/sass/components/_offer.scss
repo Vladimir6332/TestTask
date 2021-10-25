@@ -28,13 +28,7 @@
   font-family: $font-primary;
   font-size: 1rem;
   line-height: 1.2rem;
-  text-align: center;
   color: #ffffff;
-
-  @include desktop {
-    width: 30px;
-    height: 30px;
-  }
 }
 
 .offer__title {
@@ -114,5 +108,10 @@
   .offer__cost {
     font-size: 1.32rem;
     line-height: 1.55rem;
+  }
+  .offer__reduction {
+    width: 9.35vw;
+    height: 9.35vw;
+    font-size: 1.1rem;
   }
 }
